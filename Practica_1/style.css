@@ -8,7 +8,18 @@
     - funciona si:
         -los elementos tienen contenido
         -o tienen un tamaño definido
+    
+    margin: 
+        -determina el espacio entre los elementos
+        -aplica a elementos display block
+        -computado de margenes
+        -colapso de margenes 
 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .box{
     border-top-color: cadetblue;
     border-top-style: groove;
@@ -24,14 +35,29 @@
     border-left-width: 7px;
 }
 .box1{
+    margin: 20px 40px ;
     background: steelblue;
     display: block;
     padding: 50px  45px 3px;
-    height: 100px;
+    height: 200px;
+    width: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom-left-radius: 50px ;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 20px;
 }
 .box2{
     background: salmon;
-    padding: 2px 4px 6px 8px;
+    padding: auto;
     display: block;
     height: 200px;
+    width: 200px;
+    opacity: 0.5;
+    margin-top: 100PX;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+
 }
